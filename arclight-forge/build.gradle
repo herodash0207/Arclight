@@ -1,11 +1,11 @@
 plugins {
     id 'architectury-plugin' version "${architect_plugin_version}"
-    id 'com.gradleup.shadow' version "${shadow_plugin_version}"
+    id 'com.gradleup.shadow' version "${shadow_plugin_version}" 
 }
 
 architectury {
     minecraft = minecraftVersion
-    platformSetupLoomIde()
+    platformSetupLoomIde(2)
     forge()
 }
 
